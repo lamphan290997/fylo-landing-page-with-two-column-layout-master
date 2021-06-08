@@ -1,0 +1,311 @@
+/* reset css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;  
+}
+
+.attribution { font-size: 11px; text-align: center; padding: 50px 0px 0px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* reset css */
+.desktop{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.mobile{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#header .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#header .logo{
+    height: 100%;
+    width: auto;
+}
+
+#header ul{
+    list-style: none;
+}
+
+#header ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#header ul li a{
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+    font-weight: 700;
+}
+
+#content{
+    margin-top: 50px;
+    margin: 20px;
+}
+
+#content h2{
+    color: hsl(243, 87%, 12%);
+    margin-bottom: 20px;
+}
+
+#content p{
+    color: hsl(238, 22%, 44%);
+    margin-bottom: 15px;
+}
+
+#content .input .input-email{
+    padding: 8px;
+}
+
+#content .input .submit{
+    border: 0px;
+    padding: 8px 30px;
+    margin-left: 5px;
+    color: hsl(240, 75%, 98%);
+    border-radius: 3px;
+    background-color: hsl(224, 93%, 58%);
+    box-shadow: hsl(0, 0%, 75%) 1px 1px 10px;
+}
+
+#content .input .submit:hover,
+#register #box-register .input .submit:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#content .card-files,
+#content .card-stayproduct,
+#register #box-register{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+
+#content .card-files .illustration-1,
+#content .card-stayproduct .illustration-2{
+    width: 40%;
+}
+
+#content .card-stayproduct .content-1 a:hover{
+    opacity: 0.8;
+}
+
+#content .card-stayproduct .content-2{
+    margin-top: 20px;
+    width: 60%;
+    border-radius: 7px;
+    box-shadow: hsl(0, 0%, 75%) 1px 1px 4px;
+    background-color: hsl(240, 75%, 98%);
+    padding: 20px;
+}
+
+#content .card-stayproduct .avatar-kyle{
+    border-radius: 100%;
+    width: 65px;
+    margin-right: 10px;
+}
+
+#content .card-stayproduct .kyle{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+#register{
+    background-color: hsl(238, 22%, 44%);
+    padding: 35px 20px;
+    color: hsl(240, 75%, 98%);
+}
+
+#register h2{
+    margin-bottom: 20px;
+}
+
+#register #box-register{
+    margin: 35px 35px 35px 0;
+}
+
+#register #box-register .content{
+    width: 50%;
+}
+
+#register #box-register .input{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+#register #box-register .input .submit{
+    border: 0px;
+    width: 50%;
+    padding: 8px 30px;
+    margin-top: 10px;
+    color: hsl(240, 75%, 98%);
+    border-radius: 3px;
+    background-color: hsl(224, 93%, 58%);
+    box-shadow: hsl(224, 93%, 58%) 1px 1px 10px;
+}
+
+#register #box-register .input .input-email{
+    padding: 8px 140px;
+}
+
+#footer{
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    font-family: 'Open Sans', sans-serif;
+    padding: 70px 20px;
+}
+
+#footer #box-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#footer #box-footer .contact img{
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#footer #box-footer .about-us li,
+#footer #box-footer .privacy li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#footer #box-footer .about-us a,
+#footer #box-footer .privacy a{
+    color: hsl(240, 75%, 98%);
+    text-decoration: none;
+}
+
+#footer #box-footer .social{
+    margin-right:50px ;
+}
+
+#footer #box-footer .ti-facebook, 
+#footer #box-footer .ti-twitter, 
+#footer #box-footer .ti-instagram{
+    padding: 8px;
+    margin-left: 7px;
+    border: 2px solid;
+    border-radius: 100%;
+}
+
+#footer #box-footer .ti-facebook:hover, 
+#footer #box-footer .ti-twitter:hover, 
+#footer #box-footer .ti-instagram:hover,
+#footer #box-footer a:hover{
+    color: hsl(238, 22%, 44%);
+    cursor: pointer;
+}
+
+/* mobile */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 375px) and (max-device-width : 740px) {
+.desktop{
+    display: none;
+}
+
+.mobile{
+    display: block;
+}
+#main{
+    text-align: center;
+}
+#header .logo{
+    width:  25%;
+    height: auto;
+}
+
+#content .card-files,
+#content .card-stayproduct
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#content p{
+    margin-bottom: 20px;
+}
+
+#content .input {
+    display: flex;
+    flex-direction: column;
+}
+
+#content .input .submit{
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+#content .card-files .illustration-1,
+#content .card-stayproduct .illustration-2{
+    width: 100%;
+}
+
+#content .card-stayproduct .content-2{
+    width: 100%;
+}
+
+#register #box-register{
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+}
+
+#register #box-register .content{
+    margin-top: 20px;
+    width: 100%;
+}
+
+#register #box-register .input{
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 80%;
+}
+
+#register #box-register .input .submit{
+    width: 100%;
+}
+
+#register #box-register .input .input-email{
+    padding: 8px;
+}
+
+#footer {
+    text-align: left ;
+}
+
+#footer #box-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer #box-footer .social{
+    text-align: center;
+    margin: 30px 0px ;
+}
+
+#footer #box-footer .contact{
+    margin-bottom: 10px;
+}
+}
+/* mobile */
