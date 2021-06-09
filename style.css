@@ -179,6 +179,11 @@ html{
     justify-content: space-between;
 }
 
+#footer #box-footer .social a{
+    color: hsl(240, 75%, 98%);
+    text-decoration: none;
+}
+
 #footer #box-footer .contact img{
     margin-right: 15px;
     margin-top: 10px;
